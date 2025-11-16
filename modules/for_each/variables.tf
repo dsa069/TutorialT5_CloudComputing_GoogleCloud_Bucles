@@ -6,15 +6,6 @@ variable "gcp-project" {
   description = "GCP project"
 }
 
-variable "gcp-region" {
-  description = "GCP region"
-
-}
-
-variable "gcp-zone" {
-  description = "GCP zone"
-}
-
 variable "instances" {
   description = "Number of instances to create"
   type = map(object({
@@ -22,4 +13,8 @@ variable "instances" {
     machine_type = string,
     image        = string
   }))
+}
+
+variable "gcp-zone" {
+  description = "zona"
 }

@@ -11,6 +11,6 @@ provider "google" {
   credentials = file("./gcp-identity.json")
 
   project = var.gcp-project
-  region  = "us-central1"
-  zone    = "us-central1-c"
+  region  = var.gcp-region
+  zone    = var.gcp-zone
 }
